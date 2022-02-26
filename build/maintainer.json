@@ -1225,6 +1225,9 @@
     "/telegram/telegram/channel/:username/:searchQuery?": [
         "DIYgod"
     ],
+    "/telegram/telegram/boldtitle": [
+        "jiesou"
+    ],
     "/telegram/telegram/stickerpack/:name": [
         "DIYgod"
     ],
