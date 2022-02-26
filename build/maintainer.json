@@ -1222,11 +1222,8 @@
         "xyqfer",
         "Fatpandac"
     ],
-    "/telegram/telegram/channel/:username/:searchQuery?": [
+    "/telegram/telegram/channel/:username/:boldTitle?/:searchQuery?": [
         "DIYgod"
-    ],
-    "/telegram/telegram/boldtitle": [
-        "jiesou"
     ],
     "/telegram/telegram/stickerpack/:name": [
         "DIYgod"
