@@ -1252,7 +1252,7 @@
         "xyqfer",
         "Fatpandac"
     ],
-    "/telegram/telegram/channel/:username/:searchQuery?": [
+    "/telegram/telegram/channel/:username/:betterTitle?/:searchQuery?": [
         "DIYgod"
     ],
     "/telegram/telegram/stickerpack/:name": [
