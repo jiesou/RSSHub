@@ -586,6 +586,12 @@
     "/github/user/followers/:user": [
         "HenryQW"
     ],
+    "/gitpod/blog": [
+        "TonyRL"
+    ],
+    "/gitpod/changelog": [
+        "TonyRL"
+    ],
     "/gocn/": [
         "AtlanCI"
     ],
@@ -980,6 +986,12 @@
     ],
     "/literotica/category/:category": [
         "nczitzk"
+    ],
+    "/liulinblog/kuaixun": [
+        "Fatpandac"
+    ],
+    "/liulinblog/itnews/:channel?": [
+        "Fatpandac"
     ],
     "/lkong/forum/:id?/:digest?": [
         "nczitzk",
