@@ -635,6 +635,9 @@
     "/google/sites/recentChanges/:id": [
         "nczitzk"
     ],
+    "/gov/anhui/kjt/:path?": [
+        "nczitzk"
+    ],
     "/gov/beijing/kw/:channel": [
         "Fatpandac"
     ],
@@ -996,6 +999,9 @@
     "/jump/discount/:platform/:filter?/:countries?": [
         "zytomorrow"
     ],
+    "/kakuyomu/episode/:id": [
+        "huangliangshusheng"
+    ],
     "/kbs/news/:category?/:language?": [
         "nczitzk"
     ],
@@ -1125,6 +1131,17 @@
     ],
     "/mygopen/:label?": [
         "nczitzk"
+    ],
+    "/natgeo/dailyselection": [
+        "OrangeEd1t"
+    ],
+    "/natgeo/dailyphoto": [
+        "LogicJake",
+        "OrangeEd1t",
+        "TonyRL"
+    ],
+    "/natgeo/:cat/:type?": [
+        "fengkx"
     ],
     "/nbd/daily": [
         "MeXunco"
@@ -1344,6 +1361,9 @@
     "/qq88/:category?": [
         "nczitzk"
     ],
+    "/qweather/weather/:location": [
+        "Rein-Ou"
+    ],
     "/radio-canada/latest/:language?": [
         "nczitzk"
     ],
@@ -1505,6 +1525,26 @@
     "/test/:id": [
         "DIYgod",
         "NeverBehave"
+    ],
+    "/thepaper/839studio/:id": [
+        "umm233"
+    ],
+    "/thepaper/839studio": [
+        "umm233"
+    ],
+    "/thepaper/channel/:id": [
+        "xyqfer",
+        "nczitzk"
+    ],
+    "/thepaper/featured": [
+        "HenryQW",
+        "nczitzk"
+    ],
+    "/thepaper/factpaper/:status?": [
+        "nczitzk"
+    ],
+    "/thepaper/list/:id": [
+        "nczitzk"
     ],
     "/timednews/news/:type?": [
         "linbuxiao"
@@ -1759,6 +1799,12 @@
     "/zjgtjy/:type?": [
         "Fatpandac"
     ],
+    "/zooTeam/zooTeam/blog": [
+        "Pulset"
+    ],
+    "/zooTeam/zooTeam/weekly": [
+        "Pulset"
+    ],
     "/1draw": [],
     "/quicker/qa": [],
     "/quicker/update": [],
@@ -1923,8 +1969,6 @@
     "/t66y/post/:tid": [],
     "/t66y/:id/:type?": [],
     "/sexinsex/:id/:type?": [],
-    "/natgeo/dailyphoto": [],
-    "/natgeo/:cat/:type?": [],
     "/one": [],
     "/firefox/release/:platform": [],
     "/firefox/addons/:id": [],
@@ -2201,11 +2245,6 @@
     "/iplay/home": [],
     "/xclient/app/:name": [],
     "/embassy/:country/:city?": [],
-    "/thepaper/featured": [],
-    "/thepaper/channel/:id": [],
-    "/thepaper/list/:id": [],
-    "/thepaper/839studio": [],
-    "/thepaper/839studio/:id": [],
     "/dysfz": [],
     "/dysfz/index": [],
     "/kirara/news": [],
