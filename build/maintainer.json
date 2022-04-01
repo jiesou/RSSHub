@@ -726,6 +726,9 @@
         "nczitzk",
         "xie-dongping"
     ],
+    "/hameln/chapter/:id": [
+        "huangliangshusheng"
+    ],
     "/hbr/topic/:topic?/:type?": [
         "nczitzk"
     ],
@@ -1042,6 +1045,9 @@
     ],
     "/knowmedia/:category?": [
         "Fatpandac"
+    ],
+    "/kyodonews/:language?/:keyword?": [
+        "Rongronggg9"
     ],
     "/lanqiao/author/:uid": [
         "huhuhang"
@@ -1398,6 +1404,25 @@
         "nczitzk"
     ],
     "/qq88/:category?": [
+        "nczitzk"
+    ],
+    "/quicker/qa/:category?/:state?": [
+        "Cesaryuan",
+        "nczitzk"
+    ],
+    "/quicker/share/:category?": [
+        "nczitzk"
+    ],
+    "/quicker/update": [
+        "Cesaryuan",
+        "nczitzk"
+    ],
+    "/quicker/user/:category/:id": [
+        "Cesaryuan",
+        "nczitzk"
+    ],
+    "/quicker/versions": [
+        "Cesaryuan",
         "nczitzk"
     ],
     "/qweather/qweather/3days/:location": [
@@ -1848,10 +1873,6 @@
         "Pulset"
     ],
     "/1draw": [],
-    "/quicker/qa": [],
-    "/quicker/update": [],
-    "/quicker/user/action/:uid/:person": [],
-    "/quicker/user/:uid/:person": [],
     "/benedictevans": [],
     "/bangumi/calendar/today": [],
     "/bangumi/subject/:id/:type": [],
