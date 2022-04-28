@@ -24,6 +24,7 @@ Deploy for public access may require:
 ## Docker Image
 
 We recommend using the latest version `diygod/rsshub` (i.e. `diygod/rsshub:latest`) of the docker image.
+
 When the latest version is unstable, you can use the image with a date tag for temporary use. For example:
 
 ```bash
@@ -32,6 +33,10 @@ $ docker pull diygod/rsshub:2021-06-18
 
 You can back to the latest version when the code has been fixed and rebuild the image.
 
+If you need to enable puppeteer on x86_64 (amd64), `diygod/rsshub:chromium-bundled` is a good choice. If date specified, it will become: `diygod/rsshub:chromium-bundled-2021-06-18`.
+
+On all supported architectures, to enable puppeteer, using Docker Compose is another good choice. However, it consumes more disk space and memory. By modifiying the `docker-compose.yml` file, you can use `diygod/rsshub:chromium-bundled` instead to reduce the disk space and memory consumption.
+
 ## Docker Compose Deployment
 
 ### Install
@@ -39,7 +44,13 @@ You can back to the latest version when the code has been fixed and rebuild the 
 Download [docker-compose.yml](https://github.com/DIYgod/RSSHub/blob/master/docker-compose.yml)
 
 ```bash
-wget https://raw.githubusercontent.com/DIYgod/RSSHub/master/docker-compose.yml
+$ wget https://raw.githubusercontent.com/DIYgod/RSSHub/master/docker-compose.yml
+```
+
+Check if any configuration needs to be changed
+
+```bash
+$ vi docker-compose.yml  # or your favorite editor
 ```
 
 Create a docker volume to persist Redis caches
@@ -75,6 +86,8 @@ Then repeat the installation steps
 Edit `environment` in [docker-compose.yml](https://github.com/DIYgod/RSSHub/blob/master/docker-compose.yml)
 
 ## Docker Deployment
+
+> **To enable puppeteer, replace `diygod/rsshub` with `diygod/rsshub:chromium-bundled` in EACH command (only on x86_64)**
 
 ### Install
 
@@ -119,7 +132,7 @@ For example, adding `-e CACHE_EXPIRE=3600` will set the cache time to 1 hour.
 $ docker run -d --name rsshub -p 1200:1200 -e CACHE_EXPIRE=3600 -e GITHUB_ACCESS_TOKEN=example diygod/rsshub
 ```
 
-This deployment method does not include puppeteer and Redis dependencies. Use the Docker Compose deployment method or deploy external dependencies yourself if you need it.
+This deployment method does not include puppeteer (unless using `diygod/rsshub:chromium-bundled` instead on x86_64) and Redis dependencies. Use the Docker Compose deployment method or deploy external dependencies yourself if you need it.
 
 To configure more options please refer to [Configuration](#configuration).
 
@@ -532,7 +545,8 @@ See docs of the specified route and `lib/config.js` for detailed information.
     -   `EH_IPB_MEMBER_ID`: The value of `ipb_member_id` in the cookie header after logging in E-Hentai
     -   `EH_IPB_PASS_HASH`: The value of `ipb_pass_hash` in the cookie header after logging in E-Hentai
     -   `EH_SK`: The value of `sk` in the cookie header after logging in E-Hentai
-    -   `EH_IGNEOUS`: The value of `igneous` in the cookie header after logging in ExHentai. If this value is set, RSS will be generated from ExHentai, `EH_SK` will be ignored.
+    -   `EH_IGNEOUS`: The value of `igneous` in the cookie header after logging in ExHentai. If this value is set, RSS will be generated from ExHentai
+    -   `EH_IMG_PROXY`: Cover proxy address. If this is set, the link to the cover image will be replaced with this value at the beginning. When using ExHentai, the cover image requires cookies to access it, so you can use this with a cookie-added proxy server to access the cover image without cookies in some readers.
 
 -   GitHub: [Access Token application](https://github.com/settings/tokens)
 
