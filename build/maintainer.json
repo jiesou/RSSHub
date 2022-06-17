@@ -700,11 +700,11 @@
     "/elasticsearch-cn/:params?": [
         "nczitzk"
     ],
-    "/elsevier/:journal/latest": [
+    "/elsevier/:journal": [
         "Derekmini",
         "sunwolf-swb"
     ],
-    "/elsevier/:journal/vol/:id": [
+    "/elsevier/:journal/:issue": [
         "Derekmini",
         "sunwolf-swb"
     ],
@@ -1100,6 +1100,26 @@
     "/hizu/:column?": [
         "nczitzk"
     ],
+    "/hk01/channel/:id": [
+        "hoilc",
+        "Fatpandac"
+    ],
+    "/hk01/hot": [
+        "hoilc",
+        "Fatpandac"
+    ],
+    "/hk01/issue/:id": [
+        "hoilc",
+        "Fatpandac"
+    ],
+    "/hk01/tag/:id": [
+        "hoilc",
+        "Fatpandac"
+    ],
+    "/hk01/zone/:id": [
+        "hoilc",
+        "Fatpandac"
+    ],
     "/hkej/:category?": [
         "TonyRL"
     ],
@@ -1188,11 +1208,11 @@
     "/icac/news/:lang?": [
         "linbuxiao, TonyRL"
     ],
-    "/ieee/:journal/latest/date/:sortType?": [
+    "/ieee/journal/:journal/:sortType?": [
         "Derekmini",
         "auto-bot-ty"
     ],
-    "/ieee/:journal/latest/vol/:sortType?": [
+    "/ieee/journal/:journal/recent/:sortType?": [
         "Derekmini",
         "auto-bot-ty"
     ],
@@ -2048,6 +2068,14 @@
     "/sciencenet/user/:id": [
         "nczitzk"
     ],
+    "/scitation/:pub/:jrn": [
+        "Derekmini",
+        "auto-bot-ty"
+    ],
+    "/scitation/:pub/:jrn/:sec": [
+        "Derekmini",
+        "auto-bot-ty"
+    ],
     "/sdu/cmse/:type?": [
         "Ji4n1ng"
     ],
@@ -2135,6 +2163,10 @@
     ],
     "/spotify/top/artists": [
         "outloudvi"
+    ],
+    "/springer/journal/:journal": [
+        "Derekmini",
+        "TonyRL"
     ],
     "/sputniknews/:category?/:language?": [
         "nczitzk"
@@ -2255,6 +2287,12 @@
         "hoilc",
         "TonyRL"
     ],
+    "/techflow520/newsflash": [
+        "nczitzk"
+    ],
+    "/techflow520/:category?": [
+        "nczitzk"
+    ],
     "/telegram/telegram/channel/:username/:routeParams?": [
         "DIYgod",
         "Rongronggg9"
@@ -2267,6 +2305,9 @@
     ],
     "/tencent/qq/sdk/changelog/:platform": [
         "nuomi1"
+    ],
+    "/tencent/cloud/column/:id?/:tag?": [
+        "nczitzk"
     ],
     "/test/:id": [
         "DIYgod",
@@ -3640,11 +3681,6 @@
     "/mcbbs/forum/:type": [],
     "/mcbbs/post/:tid/:authorid?": [],
     "/pocket/trending": [],
-    "/hk01/zone/:id": [],
-    "/hk01/channel/:id": [],
-    "/hk01/issue/:id": [],
-    "/hk01/tag/:id": [],
-    "/hk01/hot": [],
     "/manong-weekly": [],
     "/pork-price": [],
     "/noi": [],

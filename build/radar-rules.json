@@ -4709,6 +4709,44 @@
       }
     ]
   },
+  "hk01.com": {
+    "_name": "香港01",
+    "www": [
+      {
+        "title": "最 Hit",
+        "docs": "https://docs.rsshub.app/traditional-media.html#xiang-gang-01",
+        "source": [
+          "/hot",
+          "/"
+        ],
+        "target": "/hk01/hot"
+      },
+      {
+        "title": "zone",
+        "docs": "https://docs.rsshub.app/traditional-media.html#xiang-gang-01",
+        "source": "/zone/:id/:title",
+        "target": "/hk01/zone/:id"
+      },
+      {
+        "title": "channel",
+        "docs": "https://docs.rsshub.app/traditional-media.html#xiang-gang-01",
+        "source": "/channel/:id/:title",
+        "target": "/hk01/channel/:id"
+      },
+      {
+        "title": "issue",
+        "docs": "https://docs.rsshub.app/traditional-media.html#xiang-gang-01",
+        "source": "/issue/:id/:title",
+        "target": "/hk01/issue/:id"
+      },
+      {
+        "title": "tag",
+        "docs": "https://docs.rsshub.app/traditional-media.html#xiang-gang-01",
+        "source": "/tag/:id/:title",
+        "target": "/hk01/tag/:id"
+      }
+    ]
+  },
   "hkej.com": {
     "_name": "信报财经新闻",
     ".": [
@@ -5100,12 +5138,12 @@
     "_name": "IEEE",
     "www": [
       {
-        "title": "latestVolume",
+        "title": "Journal",
         "docs": "https://docs.rsshub.app/journal.html#ieee-xplore",
         "source": "/*"
       },
       {
-        "title": "latestDate",
+        "title": "Recent",
         "docs": "https://docs.rsshub.app/journal.html#ieee-xplore",
         "source": "/*"
       }
@@ -5525,18 +5563,18 @@
     ]
   },
   "scitation.org": {
-    "_name": "JASA",
-    "asa": [
+    "_name": "scitation",
+    ".": [
       {
-        "title": "latest",
-        "docs": "https://docs.rsshub.app/journal.html#jasa",
-        "source": "/*",
-        "target": "/jasa/latest"
+        "title": "journal",
+        "docs": "https://docs.rsshub.app/journal.html#scitation",
+        "source": ":pub.scitation.org/toc/:jrn",
+        "target": "/scitation/:pub/:jrn"
       },
       {
         "title": "section",
-        "docs": "https://docs.rsshub.app/journal.html#jasa",
-        "source": "/*"
+        "docs": "https://docs.rsshub.app/journal.html#scitation",
+        "source": ":pub.scitation.org/toc/:jrn"
       }
     ]
   },
@@ -9535,6 +9573,17 @@
       }
     ]
   },
+  "springer.com": {
+    "_name": "Springer",
+    "www": [
+      {
+        "title": "latest",
+        "docs": "https://docs.rsshub.app/journal.html#Springer",
+        "source": "/journal/:journal/*",
+        "target": "/springer/journal/:journal"
+      }
+    ]
+  },
   "sputniknews.cn": {
     "_name": "俄罗斯卫星通讯社",
     ".": [
@@ -9979,6 +10028,27 @@
       }
     ]
   },
+  "techflow520.com": {
+    "_name": "深潮TechFlow",
+    ".": [
+      {
+        "title": "分类",
+        "docs": "https://docs.rsshub.app/new-media.html#shen-chao-techflow-fen-lei",
+        "source": [
+          "/"
+        ],
+        "target": "/techflow520/:category?"
+      },
+      {
+        "title": "快讯",
+        "docs": "https://docs.rsshub.app/new-media.html#shen-chao-techflow-kuai-xun",
+        "source": [
+          "/newsflash"
+        ],
+        "target": "/techflow520/newsflash"
+      }
+    ]
+  },
   "t.me": {
     "_name": "Telegram",
     ".": [
@@ -10003,6 +10073,20 @@
         "docs": "https://docs.rsshub.app/social-media.html#telegram-telegram-blog",
         "source": "/blog",
         "target": "/telegram/blog"
+      }
+    ]
+  },
+  "tencent.com": {
+    "_name": "腾讯云",
+    ".": [
+      {
+        "title": "云+社区专栏",
+        "docs": "https://docs.rsshub.app/programming.html#teng-xun-yun-yun-she-qu-zhuan-lan",
+        "source": [
+          "/developer/column/:id",
+          "/developer/column/:id/:tag",
+          "/"
+        ]
       }
     ]
   },
@@ -13029,44 +13113,6 @@
           "/html/zkkd"
         ],
         "target": "/gov/beijing/bjeea/zkkd"
-      }
-    ]
-  },
-  "hk01.com": {
-    "_name": "香港01",
-    "www": [
-      {
-        "title": "最 Hit",
-        "docs": "https://docs.rsshub.app/traditional-media.html#xiang-gang-01",
-        "source": [
-          "/hot",
-          "/"
-        ],
-        "target": "/hk01/hot"
-      },
-      {
-        "title": "zone",
-        "docs": "https://docs.rsshub.app/traditional-media.html#xiang-gang-01",
-        "source": "/zone/:id/:title",
-        "target": "/hk01/zone/:id"
-      },
-      {
-        "title": "channel",
-        "docs": "https://docs.rsshub.app/traditional-media.html#xiang-gang-01",
-        "source": "/channel/:id/:title",
-        "target": "/hk01/channel/:id"
-      },
-      {
-        "title": "issue",
-        "docs": "https://docs.rsshub.app/traditional-media.html#xiang-gang-01",
-        "source": "/issue/:id/:title",
-        "target": "/hk01/issue/:id"
-      },
-      {
-        "title": "tag",
-        "docs": "https://docs.rsshub.app/traditional-media.html#xiang-gang-01",
-        "source": "/tag/:id/:title",
-        "target": "/hk01/tag/:id"
       }
     ]
   },
