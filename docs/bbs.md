@@ -4,6 +4,30 @@ pageClass: routes
 
 # 论坛
 
+## 19 楼
+
+### 头条
+
+<Route author="nczitzk" example="/19lou/jiaxing" path="/19lou/:city?" :paramsDesc="['分类，见下表，默认为 www，即杭州']">
+
+| 杭州  | 台州      | 嘉兴      | 宁波     | 湖州     |
+| --- | ------- | ------- | ------ | ------ |
+| www | taizhou | jiaxing | ningbo | huzhou |
+
+| 绍兴       | 湖州     | 温州      | 金华     | 舟山       |
+| -------- | ------ | ------- | ------ | -------- |
+| shaoxing | huzhou | wenzhou | jinhua | zhoushan |
+
+| 衢州     | 丽水     | 义乌   | 萧山       | 余杭     |
+| ------ | ------ | ---- | -------- | ------ |
+| quzhou | lishui | yiwu | xiaoshan | yuhang |
+
+| 临安    | 富阳     | 桐庐     | 建德     | 淳安     |
+| ----- | ------ | ------ | ------ | ------ |
+| linan | fuyang | tonglu | jiande | chunan |
+
+</Route>
+
 ## 2047
 
 ### 分类
@@ -194,6 +218,12 @@ pageClass: routes
 
 <Route author="mengx8" example="/etoland/star01" path="/etoland/:boardId" :paramsDesc="['板块 id，可在板块 URL 找到']" radar="1" rssbud="1"/>
 
+## HACKER TALK 黑客说
+
+### 最新帖子
+
+<Route author="hyoban" example="/hackertalk" path="/hackertalk" radar="1" rssbud="1"/>
+
 ## LearnKu
 
 ### 社区
@@ -254,7 +284,7 @@ pageClass: routes
 
 ### 帖子
 
-<Route author="xyqfer" example="/nga/post/18449558" path="/nga/post/:tid"  :paramsDesc="['帖子 id, 可在帖子 URL 找到']" radar="1" rssbud="1"/>
+<Route author="xyqfer syrinka" example="/nga/post/18449558" path="/nga/post/:tid/:authorId?"  :paramsDesc="['帖子 id, 可在帖子 URL 找到', '作者 id']" radar="1" rssbud="1"/>
 
 ## PLAYNO.1 玩樂達人
 
